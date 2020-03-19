@@ -418,7 +418,7 @@ int main(int argc, char **argv)
 		}
 
 		dns_header->id = random();
-		gen_random(r, random() % 127);
+		gen_random(r, random() % 63);
 		//printf("b: %s\n", qname);
 		strcat(r, ".");
 		strcat(r, qname);
