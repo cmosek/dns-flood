@@ -5,7 +5,7 @@ TARBALL = dnsflood.tar.gz
 all : $(TARGET)
 
 $(TARGET) : $(SOURCE)
-	gcc -o $(TARGET) -g -DDEBUG $(SOURCE)
+	gcc -std=c99 -o $(TARGET) -g -DDEBUG $(SOURCE)
 
 tarball :
 	tar -c -z -f $(TARBALL) $(SOURCE) makefile
